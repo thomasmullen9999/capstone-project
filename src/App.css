@@ -14,18 +14,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white; /* Changed from dark to white */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #006400; /* Dark green text */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ffd700; /* Bright yellow link */
+  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +36,262 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* index.css */
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #f5fff5; /* Very light green background */
+  color: #006400; /* Dark green text */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff; /* White background for main content */
+  border: 2px solid #ffd700; /* Yellow border */
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1); /* Subtle green shadow */
+}
+
+/* Header styles */
+header {
+  background-color: white;
+  padding: 2rem;
+  border-bottom: 4px solid #006400; /* Dark green underline */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header h1 {
+  color: #006400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+header img {
+  width: 120px;
+}
+
+/* Nav styles */
+nav {
+  background-color: #f0fff0; /* Light green background */
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #006400;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700; /* Yellow on hover */
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  padding: 3rem 2rem;
+  background-color: white;
+  color: #006400;
+}
+
+main h1 {
+  font-size: 2rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #006400;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+footer h2 {
+  color: #ffd700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  filter: brightness(0) invert(1); /* Makes logos white */
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+/* Responsive grid for footer */
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+/* Header */
+.header {
+  background-color: white;
+  padding: 2rem;
+  border-bottom: 4px solid #006400; /* Dark green underline */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  color: #006400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header-logo {
+  width: 120px;
+}
+
+/* Nav */
+.nav {
+  background-color: #f0fff0; /* Light green background */
+  padding: 1rem 2rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #006400;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Yellow on hover */
+  text-decoration: underline;
+}
+
+/* Main */
+.main-content {
+  padding: 3rem 2rem;
+  background-color: white;
+  color: #006400;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #006400;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 128px;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+}
+
+.footer-title {
+  color: #ffd700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  color: #ffd700;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.25rem;
+  transition: text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Paragraphs in footer */
+.footer-section p {
+  margin: 0.25rem 0;
 }

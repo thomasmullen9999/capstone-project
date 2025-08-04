@@ -1,36 +1,34 @@
-import React from "react";
-
 const Nav = () => {
   return (
-    <nav className="bg-gray-100 py-4 px-6">
-      <ul className="flex space-x-6 text-gray-800 font-medium">
+    <nav className="nav">
+      <ul className="nav-list">
         <li>
-          <a href="/" className="hover:underline">
+          <a href="/" className="nav-link">
             Home
           </a>
         </li>
         <li>
-          <a href="/about" className="hover:underline">
+          <a href="/about" className="nav-link">
             About
           </a>
         </li>
         <li>
-          <a href="/menu" className="hover:underline">
+          <a href="/menu" className="nav-link">
             Menu
           </a>
         </li>
         <li>
-          <a href="/reservations" className="hover:underline">
+          <a href="/reservations" className="nav-link">
             Reservations
           </a>
         </li>
         <li>
-          <a href="/order" className="hover:underline">
+          <a href="/order" className="nav-link">
             Order Online
           </a>
         </li>
         <li>
-          <a href="/login" className="hover:underline">
+          <a href="/login" className="nav-link">
             Login
           </a>
         </li>
@@ -38,5 +36,4 @@ const Nav = () => {
     </nav>
   );
 };
-
 export default Nav;
