@@ -10,6 +10,7 @@ import Main from "./components/Main";
 
 import Chicago from "./components/Chicago"; // About page replaced by Chicago
 import BookingPage from "./components/BookingPage"; // Reservations page
+import ConfirmedBooking from "./components/ConfirmedBooking";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<Chicago />} />
           <Route path="/reservations" element={<BookingPage />} />
+          <Route path="/confirmed" element={<ConfirmedBooking />} />
           {/* Add other routes for Menu, Order, Login if you have components */}
           {/* Example placeholders: */}
           {/* <Route path="/menu" element={<Menu />} /> */}

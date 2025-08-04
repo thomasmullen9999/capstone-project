@@ -355,3 +355,39 @@ footer .footer-grid {
 .chicago-restaurant img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.booking-form {
+  display: grid;
+  max-width: 300px;
+  gap: 15px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.booking-form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
