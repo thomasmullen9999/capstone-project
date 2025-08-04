@@ -1,39 +1,42 @@
+import { Link } from "react-router-dom";
+
 const Nav = () => {
   return (
     <nav className="nav">
       <ul className="nav-list">
         <li>
-          <a href="/" className="nav-link">
+          <Link to="/" className="nav-link">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/about" className="nav-link">
+          <Link to="/about" className="nav-link">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/menu" className="nav-link">
+          <Link to="/menu" className="nav-link">
             Menu
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/reservations" className="nav-link">
+          <Link to="/reservations" className="nav-link">
             Reservations
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/order" className="nav-link">
+          <Link to="/order" className="nav-link">
             Order Online
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/login" className="nav-link">
+          <Link to="/login" className="nav-link">
             Login
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
   );
 };
+
 export default Nav;
