@@ -14,18 +14,18 @@
 }
 
 .App-header {
-  background-color: white; /* Changed from dark to white */
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #006400; /* Dark green text */
+  color: #006400;
 }
 
 .App-link {
-  color: #ffd700; /* Bright yellow link */
+  color: #ffd700;
   text-decoration: underline;
 }
 
@@ -38,8 +38,6 @@
   }
 }
 
-/* index.css */
-
 body,
 html,
 #root {
@@ -47,8 +45,8 @@ html,
   padding: 0;
   height: 100%;
   font-family: sans-serif;
-  background-color: #f5fff5; /* Very light green background */
-  color: #006400; /* Dark green text */
+  background-color: #f5fff5;
+  color: #006400;
 }
 
 .app-container {
@@ -64,18 +62,17 @@ html,
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #ffffff; /* White background for main content */
-  border: 2px solid #ffd700; /* Yellow border */
+  background-color: #ffffff;
+  border: 2px solid #ffd700;
   border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1); /* Subtle green shadow */
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
 }
 
-/* Header styles */
 header {
   background-color: white;
   padding: 2rem;
-  border-bottom: 4px solid #006400; /* Dark green underline */
+  border-bottom: 4px solid #006400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,9 +89,8 @@ header img {
   width: 120px;
 }
 
-/* Nav styles */
 nav {
-  background-color: #f0fff0; /* Light green background */
+  background-color: #f0fff0;
   padding: 1rem 2rem;
 }
 
@@ -115,11 +111,10 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffd700; /* Yellow on hover */
+  color: #ffd700;
   text-decoration: underline;
 }
 
-/* Main content */
 main {
   padding: 3rem 2rem;
   background-color: white;
@@ -130,7 +125,6 @@ main h1 {
   font-size: 2rem;
 }
 
-/* Footer styles */
 footer {
   background-color: #006400;
   color: white;
@@ -154,14 +148,13 @@ footer a:hover {
 }
 
 footer img {
-  filter: brightness(0) invert(1); /* Makes logos white */
+  filter: brightness(0) invert(1);
 }
 
 footer p {
   margin: 0.25rem 0;
 }
 
-/* Responsive grid for footer */
 footer .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -169,11 +162,11 @@ footer .footer-grid {
   max-width: 1200px;
   margin: auto;
 }
-/* Header */
+
 .header {
   background-color: white;
   padding: 2rem;
-  border-bottom: 4px solid #006400; /* Dark green underline */
+  border-bottom: 4px solid #006400;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,9 +183,8 @@ footer .footer-grid {
   width: 120px;
 }
 
-/* Nav */
 .nav {
-  background-color: #f0fff0; /* Light green background */
+  background-color: #f0fff0;
   padding: 1rem 2rem;
 }
 
@@ -213,11 +205,10 @@ footer .footer-grid {
 }
 
 .nav-link:hover {
-  color: #ffd700; /* Yellow on hover */
+  color: #ffd700;
   text-decoration: underline;
 }
 
-/* Main */
 .main-content {
   padding: 3rem 2rem;
   background-color: white;
@@ -228,7 +219,6 @@ footer .footer-grid {
   font-size: 2rem;
 }
 
-/* Footer */
 .footer {
   background-color: #006400;
   color: white;
@@ -291,12 +281,10 @@ footer .footer-grid {
   height: 24px;
 }
 
-/* Paragraphs in footer */
 .footer-section p {
   margin: 0.25rem 0;
 }
 
-/* BookingPage styles */
 .booking-page {
   padding: 2rem;
   font-family: Arial, sans-serif;
@@ -324,7 +312,7 @@ footer .footer-grid {
 }
 
 .booking-form button {
-  background-color: #f4ce14; /* Little Lemon yellow */
+  background-color: #f4ce14;
   color: #333;
   border: none;
   padding: 0.75rem;
@@ -339,7 +327,6 @@ footer .footer-grid {
   background-color: #e6bf00;
 }
 
-/* Chicago component styles */
 .chicago-restaurant {
   padding: 2rem;
   font-family: "Georgia", serif;
@@ -390,4 +377,170 @@ footer .footer-grid {
 
 .booking-form input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+.menu-section {
+  padding: 3rem 2rem;
+  background-color: white;
+  color: #006400;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #006400;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-card {
+  background-color: #f5fff5;
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+}
+
+.menu-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 100, 0, 0.15);
+}
+
+.menu-item-name {
+  font-size: 1.5rem;
+  color: #006400;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item-description {
+  font-size: 1rem;
+  color: #333;
+}
+
+.order-section {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  color: #006400;
+  text-align: center;
+}
+
+.order-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #006400;
+}
+
+.order-form {
+  display: grid;
+  max-width: 400px;
+  gap: 1rem;
+  margin: auto;
+  background-color: #f5fff5;
+  padding: 2rem;
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+}
+
+.order-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.25rem;
+}
+
+.order-form input[type="submit"] {
+  background-color: #ffd700;
+  color: #006400;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-form input[type="submit"]:hover {
+  background-color: #e6bf00;
+}
+
+.login-section {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  color: #006400;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #006400;
+}
+
+.login-form {
+  display: grid;
+  max-width: 300px;
+  margin: auto;
+  gap: 1rem;
+  background-color: #f5fff5;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #ffd700;
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+.login-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.25rem;
+}
+
+.login-form input[type="submit"] {
+  background-color: #ffd700;
+  color: #006400;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #e6bf00;
 }

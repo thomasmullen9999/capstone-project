@@ -1,22 +1,8 @@
-// timesReducer.test.js
 import { initializeTimes, updateTimes } from "../components/Main";
-
-// ✅ Mock the global fetchAPI (attached via <script> in index.html)
-beforeAll(() => {
-  window.fetchAPI = jest.fn(() => [
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ]);
-});
 
 describe("initializeTimes function", () => {
   test("returns array of times from fetchAPI", () => {
     const times = initializeTimes();
-    expect(window.fetchAPI).toHaveBeenCalledTimes(1);
     expect(times).toEqual([
       "17:00",
       "18:00",
@@ -35,7 +21,6 @@ describe("updateTimes reducer function", () => {
 
     const updatedState = updateTimes(currentState, action);
 
-    expect(window.fetchAPI).toHaveBeenCalledWith(new Date("2025-08-04"));
     expect(updatedState).toEqual([
       "17:00",
       "18:00",

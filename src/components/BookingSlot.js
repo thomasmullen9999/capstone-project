@@ -1,4 +1,4 @@
-// BookingSlot.jsx
+
 import React from "react";
 
 const BookingSlot = ({ time }) => {

@@ -92,10 +92,8 @@ const BookingForm = ({ availableTimes = [], dispatch, submitForm }) => {
           <option value="Anniversary">Anniversary</option>
         </select>
 
-        <input
+        <button
           type="submit"
-          value="Make Your reservation"
-          aria-label="On Click"
           disabled={!formValid}
           style={{
             backgroundColor: formValid ? "#4CAF50" : "#ccc",
@@ -105,7 +103,9 @@ const BookingForm = ({ availableTimes = [], dispatch, submitForm }) => {
             cursor: formValid ? "pointer" : "not-allowed",
             borderRadius: "6px",
           }}
-        />
+        >
+          Make Your reservation
+        </button>
       </form>
     </>
   );

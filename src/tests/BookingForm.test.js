@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import BookingForm from "../components/BookingForm";
 
-// Existing tests
+
 test("renders the BookingForm heading", () => {
   render(<BookingForm availableTimes={[]} dispatch={() => {}} />);
   const headingElement = screen.getByText(/Book Now/i);
@@ -53,14 +53,11 @@ test("form can be submitted by the user", () => {
   expect(mockSubmitForm).toHaveBeenCalledWith({
     resDate: "2025-08-04",
     resTime: "17:00",
-    guests: "4",
+    guests: 4,
     occasion: "Birthday",
   });
 });
 
-//
-// ✅ NEW TESTS: HTML5 + React validation
-//
 describe("BookingForm HTML5 validations", () => {
   beforeEach(() => {
     render(
@@ -158,7 +155,7 @@ describe("BookingForm client-side validation logic", () => {
       "17:00"
     );
     await userEvent.clear(screen.getByLabelText(/number of guests/i));
-    await userEvent.type(screen.getByLabelText(/number of guests/i), "0"); // Invalid
+    await userEvent.type(screen.getByLabelText(/number of guests/i), "0"); 
     await userEvent.selectOptions(
       screen.getByLabelText(/occasion/i),
       "Birthday"

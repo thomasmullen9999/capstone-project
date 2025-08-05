@@ -1,4 +1,4 @@
-// BookingPage.jsx
+
 import React from "react";
 import BookingForm from "../components/BookingForm";
 
@@ -9,7 +9,7 @@ const BookingPage = ({ availableTimes = [], dispatch, submitForm }) => {
       <BookingForm
         availableTimes={availableTimes}
         dispatch={dispatch}
-        submitForm={submitForm} // ✅ pass it
+        submitForm={submitForm} 
       />
 
       <h3>Available Booking Slots</h3>

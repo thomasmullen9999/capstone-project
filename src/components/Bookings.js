@@ -1,4 +1,4 @@
-// Bookings.jsx
+
 import React from "react";
 import BookingPage from "./BookingPage";
 
@@ -8,7 +8,7 @@ const Bookings = ({ availableTimes, dispatch, submitForm }) => {
       <BookingPage
         availableTimes={availableTimes}
         dispatch={dispatch}
-        submitForm={submitForm} // ✅ pass it down
+        submitForm={submitForm} 
       />
     </section>
   );

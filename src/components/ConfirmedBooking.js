@@ -1,4 +1,4 @@
-// src/pages/ConfirmedBooking.jsx
+
 import React from "react";
 
 const ConfirmedBooking = () => {
